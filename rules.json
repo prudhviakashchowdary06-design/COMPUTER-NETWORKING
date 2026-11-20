@@ -1,0 +1,56 @@
+[
+  {
+    "id": "R5",
+    "source": "203.0.113.45",
+    "destination": "Any",
+    "port": "Any",
+    "protocol": "Any",
+    "action": "Block",
+    "description": "Blacklisted IP"
+  },
+  {
+    "id": "R4",
+    "source": "Any",
+    "destination": "Any",
+    "port": "23",
+    "protocol": "TCP",
+    "action": "Block",
+    "description": "Telnet"
+  },
+  {
+    "id": "R6",
+    "source": "Any",
+    "destination": "192.168.1.20",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "Block",
+    "description": "Remote Desktop"
+  },
+  {
+    "id": "R1",
+    "source": "Any",
+    "destination": "192.168.1.10",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "Allow",
+    "description": "HTTP"
+  },
+  {
+    "id": "R2",
+    "source": "Any",
+    "destination": "192.168.1.10",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "Allow",
+    "description": "HTTPS"
+  },
+  {
+    "id": "R3",
+    "source": "192.168.1.0/24",
+    "destination": "Any",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "Allow",
+    "description": "DNS"
+  }
+]
